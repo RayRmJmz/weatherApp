@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <span class="icon">
+                    <i class="fas fa-home"></i>
+                  </span>
+                  &nbsp;
+            Weather app
+            </a>
+        </div>
+        
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+            <a class="navbar-item" href="/about">
+                <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                  &nbsp;
+                About
+            </a>
+            <a class="navbar-item" href="/help">
+                <span class="icon">
+                    <i class="fas fa-info-circle"></i>
+                  </span>
+                  &nbsp;
+                Help
+            </a>
+            <a class="navbar-item" href="/weatherForecast">
+                <span class="icon">
+                    <i class="fas fa-sun"></i>
+                  </span>
+                  &nbsp;
+                Weather forecast
+            </a>
+            </div>
+        
+        </div>
+
+        <div id="search" class="bd-search">
+            <form action="/search" method="POST">
+            <div class="field has-addons navar-item" >
+                <div class="control">
+                <input class="input is-rounded" type="text" placeholder="Location" name="title">
+                </div>
+                <div class="control">
+                <button class="button is-info" type="submit">search</button>
+
+                </div>
+            </div>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container is-widescreen">
+        <div class="column">
+          <article>
+              <h2 class="title">Index view</h2>
+          </article>
+        </div>
+      </div>
+
+    <footer class="footer">
+        <div class="content">
+          <p>© 2021 Tecnológico Nacional de MéxicoInstituto Tecnológico de Colima</p>
+          <p>Author: Raymundo Ramos Jimenez</p>
+        </div>
+      </footer>
+  </body>
+</html>
