@@ -1,0 +1,62 @@
+{{!-- header.hbs--}}
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <span class="icon">
+                <i class="fas fa-home"></i>
+                </span>
+                &nbsp;
+        Weather app
+        </a>
+    </div>
+    
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+        <a class="navbar-item" href="/about">
+            <span class="icon">
+                <i class="fas fa-info"></i>
+                </span>
+                &nbsp;
+            About
+        </a>
+        <a class="navbar-item" href="/help">
+            <span class="icon">
+                <i class="fas fa-info-circle"></i>
+                </span>
+                &nbsp;
+            Help
+        </a>
+        
+        <a class="navbar-item" href="/weatherForecast">
+            <div id="charging" class="fa"></div>
+                            &nbsp;
+            Weather forecast
+        </a>
+        </div>
+    
+    </div>
+
+</nav>
+
+<script>
+    function chargebattery() {
+    var a;
+    a = document.getElementById("charging");
+    a.innerHTML = "&#xf0e7;";
+    setTimeout(function () {
+        a.innerHTML = "&#xf0c2;";
+        }, 1000);
+    setTimeout(function () {
+        a.innerHTML = "&#xf185;";
+        }, 2000);
+    setTimeout(function () {
+        a.innerHTML = "&#xf6c4;";
+        }, 3000);
+    setTimeout(function () {
+        a.innerHTML = "&#xf740;";
+        }, 4000);
+    }
+    chargebattery();
+    setInterval(chargebattery, 5000);
+</script>
+ 

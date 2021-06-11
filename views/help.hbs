@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+  </head>
+  <body>
+    {{>header}}
+
+    <section class="hero is-medium">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+              <img src="img/help.gif" height="250">
+            <h2 class="title">
+              Welcome to help section
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section class="blog-posts">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-10 is-offset-1">
+              <div class="columns featured-post is-multiline">
+                <div class="column is-12 post">
+                  <article class="columns featured">
+                    <div class="column is-7 post-img ">
+                      <img src="img/help2.gif" alt="">
+                    </div>
+                    <div class="column is-5 featured-content va">
+                      <div>
+                        <h3 class="heading post-category"></h3>
+                        <h1 class="title post-title">How use this app</h1>
+                        <p class="post-excerpt">Select "Weather forecast" option on the navbar</p>
+                        <br>
+                        <a href="/weatherforecast" class="button is-primary">Go head</a>
+                      </div>
+
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <hr>
+              <div class="columns is-multiline">
+                <div class="column post is-6">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      <img src="img/help.png">
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Step 1</h3>
+                      <h1 class="title post-title">Select weather forecast</h1>
+                      <p class="post-excerpt">Select "Weather forecast" option on the navbar</p>
+                      <br>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-6">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      <img src="img/ubication.gif" alt="">
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Step 2</h3>
+                      <h1 class="title post-title">Select your ubication</h1>
+                      <p class="post-excerpt">Select your ubication typing your city</p>
+                      <br>
+                      <a href="weatherforecast" class="button is-primary">Search ubitacion</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-4">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      <img src="img/home.png" alt="">
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Navbar</h3>
+                      <h1 class="title post-title">Weather app</h1>
+                      <p class="post-excerpt">You can return to home.</p>
+                      <br>
+                      <a href="/" class="button is-primary">Back home</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-4">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      <img src="img/about.png" alt="">
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Navbar</h3>
+                      <h1 class="title post-title">About</h1>
+                      <p class="post-excerpt">In this section you can find more information about this application.</p>
+                      <br>
+                      <a href="/about" class="button is-primary">Read more</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-4">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      <img src="img/github.png" alt="Featured Image">
+                      <span>
+
+                      </span>
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Footer</h3>
+                      <h1 class="title post-title">Github</h1>
+                      <p class="post-excerpt">Redirect to Github repository, you can see and clone it.</p>
+                      <br>
+                      <a href="https://github.com/RayRmJmz/weatherApp" class="button is-primary">Let´s go</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+  {{>footer}}
+
+  </body>
+</html>

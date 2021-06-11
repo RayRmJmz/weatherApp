@@ -1,0 +1,1 @@
+console.log("Ranning Js with handlebar");
